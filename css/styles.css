@@ -102,8 +102,10 @@ img {
 }
 
 .contact-link-header {
-   display: block;
+   display: flex;
    padding: 32px 0;
+   align-items: center;
+   gap: 10px;
 
    color: var(--text-color-secondary);
    font-weight: 500;
@@ -111,11 +113,15 @@ img {
    text-decoration: none;
 }
 
+.contact-link-icon {
+   fill: currentColor;
+}
+
 .menu-link:hover,
 .menu-link:focus,
 .menu-link.current,
-.contact-link:hover,
-.contact-link:focus {
+.contact-link-header:hover,
+.contact-link-header:focus {
    color: var(--color-brand);
 }
 
