@@ -5,6 +5,7 @@
    --color-black: #000;
    --color-white: #FFF;
    --color-white-secondary: rgba(255, 255, 255, 0.6);
+   --color-icon: #AFB1B8;
    --bgc-primary: #2F303A;
    --bgc-secondary: #F5F4FA;
    --bgc-inverted: #188CE8;
@@ -203,10 +204,23 @@ img {
    width: 270px;
 }
 
+.benefits-thumb {
+   width: 100%;
+   height: 120px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 30px;
+   border-radius: 4px;
+
+   background-color: var(--bgc-secondary);
+}
+
 .benefits-title {
    margin-bottom: 10px;
 
    text-transform: uppercase;
+   font-size: 14px;
 }
 
 .benefits-descr {
@@ -262,9 +276,39 @@ img {
 }
 
 .teamplayer-descr {
+   margin-bottom: 16px;
+
    color: var(--text-color-secondary);
    font-size: 16px;
    line-height: 1.19;
+}
+
+.team-social-list {
+   display: flex;
+   gap: 10px;
+   justify-content: center;
+}
+
+.team-social-link {
+   width: 44px;
+   height: 44px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   color: var(--color-icon);
+
+   text-decoration: none;
+}
+
+.team-social-icon {
+   fill: currentColor;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+   color: var(--color-white);
+   background-color: var(--color-brand);
 }
 
 /* кінець сторінки "Студія" */
